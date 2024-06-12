@@ -1,12 +1,122 @@
-
-/* 
-
-    You can write your own styles here...
+h1{
+    color: blue
     
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
 
-*/
+}
+
+.light {
+    height: 100px;
+    width:  100px;
+    border-radius: 100%;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+
+}
+.stick {
+    height: 50px;
+    width:  15px;
+    background-color: black;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+}
+
+.case {
+   width: 200px;
+    background-color:  rgb(255, 223, 0);
+    border: 10px solid black;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 10%;
+}
+
+.red {
+    height: 100px;
+    width:  100px;
+    border-radius: 100%;
+    background-color: red;
+    border: 5px solid black;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    
+
+}
+
+.orange {
+    height: 100px;
+    width:  100px;
+    border-radius: 100%;
+    background-color: orange;
+    border: 3px solid black;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+}
+
+.green {
+    height: 100px;
+    width:  100px;
+    border-radius: 100%;
+    background-color: green;
+    border: 3px solid black;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+}
+
+.purple {
+    height: 100px;
+    width:  100px;
+    border-radius: 100%;
+    background-color: purple;
+    border: 3px solid black;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    margin-top: 10px;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px red;
+    }
+    to {
+        box-shadow: 0 0 40px red, 0 0 50px red, 0 0 60px red, 0 0 70px red;
+    }
+}
+
+.glow-red {
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow-orange {
+    from {
+        box-shadow: 0 0 10px orange;
+    }
+    to {
+        box-shadow: 0 0 40px orange, 0 0 50px orange, 0 0 60px orange, 0 0 70px orange;
+    }
+}
+
+.glow-orange {
+    animation: glow-orange 1s infinite alternate;
+}
+
+@keyframes glow-green {
+    from {
+        box-shadow: 0 0 10px green;
+    }
+    to {
+        box-shadow: 0 0 40px green, 0 0 50px green, 0 0 60px green, 0 0 70px green;
+    }
+}
+
+.glow-green {
+    animation: glow-green 1s infinite alternate;
+}
+
+@keyframes glow-purple {
+    from {
+        box-shadow: 0 0 10px purple;
+    }
+    to {
+        box-shadow: 0 0 40px purple, 0 0 50px purple, 0 0 60px purple, 0 0 70px purple;
+    }
+}
+
+.glow-purple {
+    animation: glow-purple 1s infinite alternate;
+}
